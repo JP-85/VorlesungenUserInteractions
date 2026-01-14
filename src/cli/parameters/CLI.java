@@ -1,4 +1,4 @@
-package CliParameters;
+package cli.parameters;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,6 +14,7 @@ public class CLI {
         System.out.println("Enter your name:");
         String name = br.readLine();
         System.out.println("Welcome " + name);
+
 
     }
 }
