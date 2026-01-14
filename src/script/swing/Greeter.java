@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Greeter {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         JFrame frame = new JFrame("Greeter");
 
         JButton btnGreet = new JButton("Greet");
