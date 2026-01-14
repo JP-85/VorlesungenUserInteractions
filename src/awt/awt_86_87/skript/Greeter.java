@@ -1,5 +1,5 @@
 // Seite: 86 - 87
-package script.awt;
+package awt.awt_86_87.skript;
 
 import java.awt.*;
 import java.awt.event.*;

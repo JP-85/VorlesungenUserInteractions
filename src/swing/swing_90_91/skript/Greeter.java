@@ -1,5 +1,5 @@
 // Seite: 90 - 91
-package script.swing;
+package swing.swing_90_91.skript;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
