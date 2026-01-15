@@ -81,7 +81,7 @@ public class MainFrame extends Frame {
         }
 
         // vertikal
-        for (int i = start + OFFSET; i <= end; i += gridStep) {
+        for (int i = start; i <= end; i += gridStep) {
             System.out.println(i);
             g.drawLine(i, start + OFFSET, i, end);
         }

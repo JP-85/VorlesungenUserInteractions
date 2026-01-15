@@ -1,4 +1,4 @@
-package exercises.exercise_2.prof;
+package cli.exercises.exercise_2.prof;
 
 public class Parameter {
 
