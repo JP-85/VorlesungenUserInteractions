@@ -5,6 +5,13 @@ Die Inhalte sind **thematisch nach AWT und Swing getrennt** und innerhalb der Or
 
 ---
 
+## Eigene Übungen
+
+Im Abschnit **self_exercises** möchte ich eigene Übungen einstellen.  
+Auch hier gilt: wer sich beteiligen möchte, bitte.
+
+---
+
 ## Repository herunterladen (Git)
 
 ### Repository klonen

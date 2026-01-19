@@ -1,5 +1,4 @@
 package awt.awt_86_87.prof;
-//
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
