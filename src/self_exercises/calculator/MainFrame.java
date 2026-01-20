@@ -10,8 +10,8 @@ public class MainFrame extends Frame {
     private final Panel buttonPanel = new Panel(new GridLayout(4, 4, 5, 5));
 
     private double storedValue = 0.0;
-    private String pendingOp = null;      // "+", "-", "*", "/"
-    private boolean startNewNumber = true; // nach Operator oder "=" beginnt neue Zahl
+    private String pendingOp = null;
+    private boolean startNewNumber = true;
     private boolean errorState = false;
 
     public MainFrame() {
@@ -41,10 +41,10 @@ public class MainFrame extends Frame {
         add(display, BorderLayout.NORTH);
 
         String[] labels = {
-                "7","8","9","+",
-                "4","5","6","-",
-                "1","2","3","*",
-                "0","C","=","/"
+                "7", "8", "9", "+",
+                "4", "5", "6", "-",
+                "1", "2", "3", "*",
+                "0", "C", "=", "/"
         };
 
         for (int i = 0; i < labels.length; i++) {
