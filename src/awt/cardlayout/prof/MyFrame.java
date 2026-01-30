@@ -1,16 +1,13 @@
 package awt.cardlayout.prof;
 
 import java.awt.*;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-public class MyFrame extends Frame implements ItemListener {
+public class MyFrame extends Frame {
 
     private final static String BUTTON = "Button";
     private final static String TEXTFIELD = "Textfield";
-    private Panel cardPanel;
 
     public MyFrame() {
 
@@ -38,10 +35,11 @@ public class MyFrame extends Frame implements ItemListener {
         Choice c = new Choice();
         c.add(BUTTON);
         c.add(TEXTFIELD);
-        c.addItemListener(this);
-
-        cardPanel = new Panel();
+        Panel cardPanel = new Panel();
         cardPanel.setLayout(new CardLayout());
+
+        c.addItemListener(new CardLayoutItemlistener(cardPanel));
+
 
         Panel buttonPanel = new Panel();
         buttonPanel.add(new Button("Button"));
@@ -54,14 +52,6 @@ public class MyFrame extends Frame implements ItemListener {
 
         add(c, BorderLayout.NORTH);
         add(cardPanel, BorderLayout.CENTER);
-    }
-
-    @Override
-    public void itemStateChanged(ItemEvent e) {
-        String newSlelection = (String)e.getItem();
-        CardLayout cl  = (CardLayout)cardPanel.getLayout();
-        cl.show(cardPanel, newSlelection);
-        System.out.println(newSlelection);
     }
 
 }
